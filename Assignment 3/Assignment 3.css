@@ -1,0 +1,437 @@
+/* Smooth scrolling behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Luckiest Guy', sans-serif;
+    color: #f8f8f8;
+}
+
+/* Header styling */
+header {
+    position: fixed; /* Fix the header at the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: lightpink;
+    padding: 20px;
+    z-index: 1; /* Keep header above other content */
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Content inside header */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+/* Header title styling */
+header h1 {
+    font-size: 3rem;
+    color: white;
+    text-shadow:
+            2px 2px 0px #2c67f2,
+            -2px -2px 0px #2c67f2,
+            2px -2px 0px #2c67f2,
+            -2px 2px 0px #2c67f2;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-left: 250px; /* Offset the title for alignment */
+}
+
+/* Logo image inside the header */
+header img {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 200px;
+}
+
+/* Navigation styling */
+nav {
+    margin-left: auto; /* Align the nav to the right */
+}
+
+.menu {
+    list-style-type: none;
+    margin: 10px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: right;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    font-size: 20px;
+    text-shadow:
+            2px 2px 0px #2c67f2,
+            -2px -2px 0px #2c67f2,
+            2px -2px 0px #2c67f2,
+            -2px 2px 0px #2c67f2;
+}
+
+/* Hover effect for nav links */
+.menu li a:hover {
+    background-color: purple;
+    border-radius: 6px;
+}
+
+/* Main section padding to avoid overlap with fixed header */
+main {
+    margin-top: 120px;
+}
+
+/* Welcome section styling */
+.start {
+    background-image: url("img/BackgroundNerds.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 30px;
+    text-align: center;
+    height: 500px;
+    text-shadow:
+            2px 2px 0px #5e35b1,
+            -2px -2px 0px #5e35b1,
+            2px -2px 0px #5e35b1,
+            -2px 2px 0px #2c67f2;
+}
+
+.start h2 {
+    font-family: "Fuzzy Bubbles", sans-serif;
+    font-size: 5rem;
+    margin: 0;
+}
+
+.start p {
+    font-family: "Fuzzy Bubbles", sans-serif;
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Background color for text in welcome section */
+.start h2, .start p {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+}
+
+/* About section title styling */
+.about h3 {
+    font-size: 50px;
+    text-shadow:
+            2px 2px 0px #0e1119,
+            -2px -2px 0px #5e35b1,
+            2px -2px 0px #0e1119,
+            -2px 2px 0px #5e35b1;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+/* About section background and layout */
+.about {
+    background-image: linear-gradient(to right, #1e90ff, #32cd32); /* Gradient from blue to green */
+    padding: 30px 20px;
+    text-align: center;
+    display: flex; /* Use flexbox to arrange the content */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Vertically align items */
+    height: 120px;
+    color: white;
+}
+
+/* About section image styling */
+.about img {
+    width: 130px;
+    height: 100px;
+    margin: 0 30px;
+}
+
+/* Flip effect for second image in the about section */
+.about img.flip {
+    transform: scaleX(-1); /* Flip the second image */
+}
+
+/* Styling for text inside the about section */
+.about div {
+    text-align: center;
+}
+
+/* Nerds section styling */
+.Nerd {
+    position: relative;
+    background-image: url("img/party.webp");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 250px;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.Nerd p {
+    font-family: 'Luckiest Guy', sans-serif;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 15px;
+    color: lawngreen;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
+    letter-spacing: 1px;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Products section styling */
+.products {
+    padding: 60px 20px;
+    text-align: center;
+    background-image: linear-gradient(to right, #ff7e5f, #8cd7e5); /* Gradient from pink to light blue */
+}
+
+/* Products title styling */
+.products h2 {
+    font-family: "Luckiest Guy", sans-serif;
+    font-size: 5rem;
+    margin-bottom: 30px;
+    color: deeppink;
+    letter-spacing: 5px;
+    text-shadow:
+            2px 2px 0px greenyellow,
+            -2px -2px 0px greenyellow,
+            2px -2px 0px greenyellow,
+            -2px 2px 0px greenyellow;
+}
+
+/* Flex container for the product cards */
+.product-cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Styling for individual product cards */
+.product-card {
+    position: relative;
+    background-color: palegreen;
+    width: 250px;
+    height: 350px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Product card image styling */
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Hover effect for product card */
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Product title and description */
+.product-card h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #f8f8f8;
+    text-shadow:
+            2px 2px 0px #2c67f2,
+            -2px -2px 0px #2c67f2,
+            2px -2px 0px #2c67f2,
+            -2px 2px 0px #2c67f2;
+    letter-spacing: 3px;
+}
+
+.product-card p {
+    font-size: 13px;
+    color: #f8f8f8;
+    margin-top: 10px;
+    text-shadow:
+            1px 1px 0px #0e1119,
+            -1px -1px 0px #0e1119,
+            1px -1px 0px #0e1119,
+            -1px 1px 0px #0e1119;
+}
+
+/* Button styling inside product card */
+.product-card button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: mediumpurple;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for the button inside product card */
+.product-card button:hover {
+    background-color: #1d4d9e;
+    transform: scale(1.1);
+}
+
+/* Nutrition facts section styling */
+.nutrition-facts {
+    background: linear-gradient(to right, #9b59b6, #f9c3e5);
+    padding: 40px;
+    text-align: center;
+    margin: 40px 0;
+    border-radius: 8px;
+}
+
+/* Nutrition section title styling */
+.nutrition-facts h2 {
+    font-size: 5rem;
+    color: yellow;
+    text-shadow:
+            2px 2px 0px #2c67f2,
+            -2px -2px 0px #2c67f2,
+            2px -2px 0px #2c67f2,
+            -2px 2px 0px #2c67f2;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+/* Container for nutrition items */
+.nutrition-items {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* Individual nutrition item card */
+.nutrition {
+    width: 25%;
+    text-align: center;
+    background-color: orange;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+}
+
+/* Nutrition images styling */
+.nutrition img {
+    width: 350px;
+    height: 350px;
+    margin-bottom: 10px;
+}
+
+/* Nutrition description styling */
+.nutrition p {
+    font-size: 1rem;
+    text-shadow:
+            1px 1px 0px #2c67f2,
+            -1px -1px 0px #2c67f2,
+            1px -1px 0px #2c67f2,
+            -1px 1px 0px #2c67f2;
+    letter-spacing: 4px;
+    margin: 0;
+}
+
+/* Footer section styling */
+footer {
+    text-align: center;
+    background-color: lightpink;
+    letter-spacing: 2px;
+    color: white;
+    text-shadow:
+            1px 1px 0px #2c67f2,
+            -1px -1px 0px #2c67f2,
+            1px -1px 0px #2c67f2,
+            -1px 1px 0px #2c67f2;
+    padding: 20px 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Footer logo styling */
+footer img {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+/* Footer text styling */
+footer p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+/* Contact Us Heading */
+footer h3 {
+    font-size: 1.6rem; /* Set the font size for the heading */
+    margin: 20px 0; /* Space between the heading and the form */
+    color: #f8f8f8; /* Set the color of the heading text */
+}
+
+/* Footer Form */
+footer .footer-form {
+    margin-top: 20px; /* Add space above the form */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack form elements vertically */
+    align-items: center; /* Center the form content horizontally */
+    gap: 15px; /* Space between the form elements */
+}
+
+/* Label styling inside the footer form */
+footer .footer-form label {
+    display: block; /* Make labels block elements */
+    font-size: 14px; /* Set font size for labels */
+}
+
+/* Input field styling inside the footer form */
+footer .footer-form input {
+    padding: 10px; /* Add padding inside the input fields */
+    width: 250px; /* Set the width of the input fields */
+    margin: 5px 0; /* Add vertical margin between inputs */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Round the corners of the input fields */
+    font-size: 14px; /* Set font size inside input fields */
+}
+
+/* Button styling inside the footer form */
+footer .footer-form button {
+    padding: 10px; /* Add padding inside the button */
+    background-color: mediumpurple; /* Set the background color */
+    color: white; /* Set the text color to white */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Round the corners of the button */
+    cursor: pointer; /* Change the cursor to a pointer when hovering */
+    font-size: 14px; /* Set font size inside the button */
+    width: 270px; /* Set the width of the button to match the input width */
+}
+
+/* Hover effect for the button inside the footer form */
+footer .footer-form button:hover {
+    background-color: #1d4d9e; /* Change background color on hover */
+}

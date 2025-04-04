@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character encoding and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the page displayed in the browser tab -->
+    <title>NERDS Candy</title>
+
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="Assignment%203.css">
+
+    <!-- Link to Google Fonts for custom fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Luckiest+Guy&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<header>
+    <!-- Header content with logo and tagline -->
+    <div class="header-content">
+        <h1>Tiny, Tangy, Crunchy!</h1>
+        <a href="#">
+            <img src="img/Nerds.logo.jpeg" alt="Nerds logo">
+        </a>
+    </div>
+
+    <!-- Navigation menu linking to different sections of the page -->
+    <nav>
+        <ul class="menu">
+            <li><a href="#About">About</a></li>
+            <li><a href="#Products">Products</a></li>
+            <li><a href="#Contact">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <!-- Section introducing the website and its purpose -->
+    <section class="start">
+        <h2>Welcome to Nerds Candy</h2>
+        <p>Your favorite crunchy, sweet, and tangy candy!</p>
+    </section>
+
+    <!-- About section with images and description -->
+    <div class="about" id="About">
+        <img class="flip" src="img/Nerd.man.png" alt="Image 2">
+        <div>
+            <h3>What are Nerds!</h3>
+        </div>
+        <img src="img/Nerd.man.png" alt="Image 1">
+    </div>
+
+    <!-- Description of what Nerds candy is -->
+    <div class="Nerd">
+        <p>Nerds are the ultimate crunchy, sweet, and tangy candy experience, tiny but bursting with flavor in every handful! These colorful little stones pack a punch of personality, delivering a deliciously bold and tangy taste that candy lovers of all ages can enjoy.</p>
+    </div>
+
+    <!-- Products section with product cards for each type of Nerds candy -->
+    <section class="products" id="Products">
+        <h2>Our Products</h2>
+        <div class="product-cards">
+            <div class="product-card">
+                <img src="img/nerds.OG.jpeg" alt="Product 1">
+                <h3> Nerds </h3>
+                <p>The classic</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="img/Nerds.gummy.jpeg" alt="Product 2">
+                <h3>Gummy Clusters </h3>
+                <p>Hard on the outside, Soft on the inside</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="img/rope.jpeg" alt="Product 3">
+                <h3>Nerds Rope</h3>
+                <p>Same candy, easy to eat design</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nutrition facts section for each product -->
+    <section class="nutrition-facts">
+        <h2>Nutrition Facts</h2>
+        <div class="nutrition-items">
+            <div class="nutrition">
+                <img src="img/factsog.png" alt="Nutrition 1">
+                <p> Nerds</p>
+            </div>
+            <div class="nutrition">
+                <img src="img/factsgummy.png" alt="Nutrition 2">
+                <p>Gummy Clusters</p>
+            </div>
+            <div class="nutrition">
+                <img src="img/factsrope.png" alt="Nutrition 3">
+                <p>Nerds Rope</p>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- Footer section with logo, copyright, and contact form -->
+<footer>
+    <img src="img/Nerds.logo.jpeg" alt="Nerds logo">
+    <p>&copy; 2024 Ferrara Candy Company. All Rights Reserved. Nerds is a Registered trademark of Ferrara Candy Company.</p>
+
+    <h3>Contact Us</h3>
+
+    <!-- Contact form in the footer -->
+    <form class="footer-form" action="#" method="post" id="Contact">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <button type="submit">Submit</button>
+    </form>
+</footer>
+
+</body>
+</html>
